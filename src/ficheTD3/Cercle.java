@@ -2,24 +2,24 @@ package ficheTD3;
 
 public class Cercle {
 
-	private float rayon;
+	private double rayon;
 	public Point centre = new Point();
 
-	public Cercle(Point centre, float rayon) {
+	public Cercle(Point centre, double rayon) {
 
 		this.centre = centre;
 		this.rayon = rayon;
 
 	}
 
-	public Cercle(float rayon) {
+	public Cercle(double rayon) {
 
 		this(new Point(), rayon);
 	}
 
-	public float périmètre(float rayon) {
+	public float pÃ©rimÃ¨tre(double rayon) {
 
-		return (float) (2 * rayon * Math.PI);
+		return  (2 * rayon * Math.PI);
 	}
 
 	public Cercle symetrie(Point centre) {
@@ -32,11 +32,11 @@ public class Cercle {
 		return " rayon=" + rayon + ", centre=" + centre.toString() + "";
 	}
 
-	public float getRayon() {
+	public double getRayon() {
 		return rayon;
 	}
 
-	public void setRayon(float rayon) {
+	public void setRayon(double rayon) {
 		this.rayon = rayon;
 	}
 
