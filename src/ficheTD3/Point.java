@@ -1,20 +1,20 @@
 package ficheTD3;
 
 public class Point {
-	private float abcisse;
-	private float ordonne;
+	private double abcisse;
+	private double ordonne;
 
 	public Point() {
 		this.abcisse = 0;
 		this.ordonne = 0;
 	}
 
-	Point(float abcisse) {
+	Point(double abcisse) {
 		this.abcisse = abcisse;
 		this.ordonne = abcisse;
 	}
 
-	Point(float abcisse, float ordonne) {
+	Point(double abcisse, double ordonne) {
 		this.abcisse = abcisse;
 		this.ordonne = ordonne;
 	}
@@ -30,19 +30,19 @@ public class Point {
 		return "(" + abcisse + ", " + ordonne + ")";
 	}
 
-	public void setAbcisse(float abcisse) {
+	public void setX(double abcisse) {
 		this.abcisse = abcisse;
 	}
 
-	public void setOrdonne(float ordonne) {
+	public void setY(double ordonne) {
 		this.ordonne = ordonne;
 	}
 
-	public float getAbcisse() {
+	public double getX() {
 		return abcisse;
 	}
 
-	public float getOrdonne() {
+	public double getY() {
 		return ordonne;
 	}
 
