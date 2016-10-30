@@ -11,16 +11,15 @@ public class PointNom extends Point{
     }
     
     
-    public String AfficheCord ()
-    {
-        return   ""+name + "("+ getX() +","+ getY() +")";
-    }
-    
+   @Override
+	public String toString() {
+		return "(" + getX() + ", " + getY() + ")";
+	}
     
     public void setName(String name){
     this.name = name;
     }
-    public String getname(){
+    public String getName(){
     return name;
     }
   }
