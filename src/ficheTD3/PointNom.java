@@ -13,11 +13,11 @@ public class PointNom extends Point{
     
     public String AfficheCord ()
     {
-        return this.name + "("+ getX () +","+ getY() +")";
+        return   ""+name + "("+ getX() +","+ getY() +")";
     }
     
     
-    public void setName(String Name){
+    public void setName(String name){
     this.name = name;
     }
     public String getname(){
