@@ -1,49 +1,49 @@
 package ficheTD3;
 
 public class Point {
-	private double abcisse;
-	private double ordonne;
+	private double x;
+	private double y;
 
 	public Point() {
-		this.abcisse = 0;
-		this.ordonne = 0;
+		this.x = 0;
+		this.y = 0;
 	}
 
-	Point(double abcisse) {
-		this.abcisse = abcisse;
-		this.ordonne = abcisse;
+	Point(double x) {
+		this.x = x;
+		this.y = x;
 	}
 
-	Point(double abcisse, double ordonne) {
-		this.abcisse = abcisse;
-		this.ordonne = ordonne;
+	Point(double x, double y) {
+		this.x = x;
+		this.y = Y;
 	}
 
 	public Point symertie() {
 
-		return new Point(-abcisse, ordonne);
+		return new Point(-x, y);
 
 	}
 
-	@Override
+	
 	public String toString() {
-		return "(" + abcisse + ", " + ordonne + ")";
+		return "(" + x + ", " + y + ")";
 	}
 
-	public void setX(double abcisse) {
-		this.abcisse = abcisse;
+	public void setX(double x) {
+		this.x = x;
 	}
 
-	public void setY(double ordonne) {
-		this.ordonne = ordonne;
+	public void setY(double y) {
+		this.y = y;
 	}
 
 	public double getX() {
-		return abcisse;
+		return x;
 	}
 
 	public double getY() {
-		return ordonne;
+		return y;
 	}
 
 }
