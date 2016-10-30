@@ -19,7 +19,7 @@ public class Segment {
 	public double distance(Point A, Point B) {
 
 		return Math.sqrt(
-				(Math.pow((B.getAbcisse() - A.getAbcisse()), 2) + Math.pow((B.getOrdonne() - A.getOrdonne()), 2)));
+				(Math.pow((B.getX() - A.getX()), 2) + Math.pow((B.getY() - A.getY()), 2)));
 	}
 
 	public Segment symetrie(Point A, Point B) {
