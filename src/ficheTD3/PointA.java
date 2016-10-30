@@ -16,8 +16,9 @@ public class PointA extends Point{
         super ();
     }
     
-    public String AfficheCord (){
-        return "("+ getX () +","+ getY() +")";
-    }
+    @Override
+	public String toString() {
+		return "(" + getX() + ", " + getY() + ")";
+	}
     
     }
