@@ -45,5 +45,14 @@ public class Point {
 	public double getY() {
 		return y;
 	}
+	  public void deplace(int dx, int dy) {
+        x += dx;
+        y += dy;
+    }
+         public void deplace1(int dx) {
+        x += dx;
+        y += dx;
+
+    }
 
 }
